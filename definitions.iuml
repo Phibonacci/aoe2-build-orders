@@ -4,7 +4,6 @@ skinparam {
   defaultFontSize 12
   defaultFontName Consolas
   titleFontSize 30
-  ConditionBackgroundColor #D0D2DE
   Activity {
     BackgroundColor #D0D2DE
     DiamondBackgroundColor #D0D2DE
