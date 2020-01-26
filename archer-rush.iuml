@@ -57,6 +57,7 @@ fork
 fork again
 #FFF4D8:  Move 3 Sheep to Gold  ;
 end fork
+resources(10, 9, 3, 0, 22, 25)
 
 fork
 :    At 60% of Feudal    
@@ -71,6 +72,7 @@ end fork
 
 :       Blacksmith      ;
 build("Blacksmith")
+
 
 stop
 @enduml
