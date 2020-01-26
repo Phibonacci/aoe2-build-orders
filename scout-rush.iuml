@@ -4,7 +4,7 @@
 title Scout Rush
 start
 
-:    2 Queue villagers  ;
+:    2 Queue villager   ;
 resources(0, 0, 0, 0, 4, 5)
 
 fork
