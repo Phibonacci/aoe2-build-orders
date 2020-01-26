@@ -12,7 +12,7 @@ skinparam {
   Note {
     FontSize 16
     BorderThickness 0
-    BorderColor White
+    BorderColor #9FA3B7
     BackgroundColor  #9FA3B7
   }
   Arrow {
