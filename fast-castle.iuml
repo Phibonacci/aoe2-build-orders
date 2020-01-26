@@ -1,0 +1,70 @@
+@startuml
+!include definitions.iuml
+
+title Fast Castle
+start
+
+:    2 Queue villagers  ;
+resources(0, 0, 0, 0, 4, 5)
+
+fork
+:Build a house with 2 villagers;
+fork again
+:Build a house with 1 villager;
+end fork
+build("House")
+
+#ECC8D1:Move villagers to sheep;
+resources(0, 3, 0, 0, 4, 15)
+
+#ECC8D1:        3 Sheep        ;
+resources(0, 6, 0, 0, 7, 15)
+
+#CDE2C0:         4 Wood        ;
+resources(4, 6, 0, 0, 11, 15)
+
+:          Boar         ;
+resources(4, 7, 0, 0, 12, 15)
+
+#ECC8D1:    House then Mill    ;
+build("House", "Mill")
+
+#ECC8D1:         3 Mill        ;
+resources(4, 11, 0, 0, 16, 20)
+
+#ECC8D1:          Boar         ;
+resources(4, 12, 0, 0, 17, 20)
+
+: House with Woodworker ;
+build("House")
+
+#ECC8D1:        3 Sheep        ;
+resources(4, 15, 0, 0, 20, 25)
+
+#CDE2C0:         3 Wood        ;
+resources(7, 15, 0, 0, 23, 25)
+
+:House with Woodworker;
+build("House")
+
+#FFF4D8:         3 Gold        ;
+resources(7, 15, 3, 0, 26, 30)
+
+#ECC8D1:  Move 3 Sheep to Deer ;
+
+:  Loom and Feudal Age  ;
+
+fork
+:    2 Queue villager   ;
+fork again
+:    2 Wood on Market   ;
+build("Market")
+fork again
+:  1 Wood on Blacksmith ;
+build("Blacksmith")
+end fork
+
+:       Castle Age      ;
+
+stop
+@enduml

@@ -1,0 +1,56 @@
+!$path   = "D:\projects\aoe2 chart\assets\"
+
+skinparam {
+  defaultFontSize 12
+  defaultFontName Consolas
+  titleFontSize 30
+  ConditionBackgroundColor #D0D2DE
+  Activity {
+    BackgroundColor #D0D2DE
+    DiamondBackgroundColor #D0D2DE
+    BorderThickness 0
+  }
+  Note {
+    FontSize 16
+    BorderThickness 0
+    BorderColor White
+    BackgroundColor  #9FA3B7
+  }
+  Arrow {
+    Color Grey
+  }
+  backgroundColor white
+  handwritten true
+}
+
+!function resource_space($count) 
+  !if (%strlen($count) > 1)
+    !return " "
+  !else
+    !return "  "
+  !endif
+!endfunction
+
+!function resources($wood, $food, $gold, $stone, $current_population, $max_population)
+  floating note right
+    <img:$path\Wood20x20.png><b>$wood</b>resource_space($wood)<img:$path\Food20x20.png><b>$food</b>resource_space($food)<img:$path\Gold20x20.png><b>$gold</b>resource_space($gold)<img:$path\Stone20x20.png><b>$stone</b>resource_space($stone)<img:$path\town_center20x20.png><b>$current_population/$max_population</b>
+  end note
+!endfunction
+
+!function build($building1)
+  floating note left
+    <img:D:\projects\aoe2 chart\assets\$building1.png>
+  end note
+!endfunction
+
+!function build($building1, $building2)
+  floating note left
+    <img:D:\projects\aoe2 chart\assets\$building1.png> <img:D:\projects\aoe2 chart\assets\$building2.png>
+  end note
+!endfunction
+
+!function build($building1, $building2, $building3)
+  floating note left
+    <img:D:\projects\aoe2 chart\assets\$building1.png> <img:D:\projects\aoe2 chart\assets\$building2.png> <img:D:\projects\aoe2 chart\assets\$building3.png>
+  end note
+!endfunction

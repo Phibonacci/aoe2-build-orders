@@ -1,0 +1,84 @@
+@startuml
+!include definitions.iuml
+
+title Scout Rush
+start
+
+:    2 Queue villagers  ;
+resources(0, 0, 0, 0, 4, 5)
+
+fork
+:Build a house with 2 villagers;
+fork again
+:Build a house with 1 villager;
+end fork
+build("House")
+
+#ECC8D1:Move villagers to sheep;
+resources(0, 3, 0, 0, 4, 15)
+
+#ECC8D1:        3 Sheep        ;
+resources(0, 6, 0, 0, 7, 15)
+
+#CDE2C0:         3 Wood        ;
+resources(3, 6, 0, 0, 10, 15)
+
+:          Boar         ;
+resources(3, 7, 0, 0, 11, 15)
+
+#ECC8D1:    House then Mill    ;
+build("House", "Mill")
+
+#ECC8D1:         3 Mill        ;
+resources(3, 11, 0, 0, 15, 20)
+
+#ECC8D1:          Boar         ;
+resources(3, 12, 0, 0, 16, 20)
+
+#ECC8D1:        2 Sheep        ;
+resources(3, 14, 0, 0, 18, 20)
+
+: House with Woodworker ;
+build("House")
+
+#CDE2C0:         2 Wood        ;
+resources(5, 14, 0, 0, 20, 25)
+
+#ECC8D1:        1 Sheep        ;
+resources(5, 15, 0, 0, 21, 25)
+
+#CDE2C0:     1 new Woodline    ;
+resources(6, 15, 0, 0, 22, 25)
+
+#CDE2C0:  Move 4 sheep to wood ;
+resources(10, 11, 0, 0, 22, 25)
+
+:  Loom and Feudal Age  ;
+
+:    At 60% of Feudal   
+2 Woodworker on Barracks
+  then House and Stable ;
+build("Barracks", "House", "Stable")
+
+fork
+:     3 Queue scout     ;
+fork again
+#CDE2C0:      3 Queue Wood     ;
+end fork
+
+:   Search two bit axe  
+    and horse collar    ;
+
+:       Blacksmith      ;
+build("Blacksmith")
+
+:   Search Wheelbarrow  
+         at 15mn        ;
+
+if (Archer transition?) then (Yes)
+#FFF4D8:     Move 4 to gold    ;
+else (No)
+endif
+
+stop
+@enduml
