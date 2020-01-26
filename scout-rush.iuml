@@ -23,7 +23,7 @@ resources(0, 6, 0, 0, 7, 15)
 #CDE2C0:         3 Wood        ;
 resources(3, 6, 0, 0, 10, 15)
 
-:          Boar         ;
+#ECC8D1:          Boar         ;
 resources(3, 7, 0, 0, 11, 15)
 
 #ECC8D1:    House then Mill    ;
