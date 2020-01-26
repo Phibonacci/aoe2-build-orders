@@ -18,4 +18,12 @@ Build for commit *bdc030d1137d7fa3c1223679a5d767c9bfaf2155*.
 
 ----
 
+Build for commit *bdc030d1137d7fa3c1223679a5d767c9bfaf2155*.
+
 ![Scout Rush](https://i.imgur.com/WtiXnHO.png)
+
+----
+
+Build for commit *3fe6b8258cb542f374b584a537a3c3e86593907c*
+
+![Archer Rush](https://i.imgur.com/lbGZwaD.png)
