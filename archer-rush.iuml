@@ -1,0 +1,76 @@
+@startuml
+!include definitions.iuml
+
+title Archer Rush
+start
+
+:    2 Queue villager   ;
+resources(0, 0, 0, 0, 4, 5)
+
+fork
+:Build a house with 2 villagers;
+fork again
+:Build a house with 1 villager;
+end fork
+build("House")
+
+#ECC8D1:Move villagers to sheep;
+resources(0, 3, 0, 0, 4, 15)
+
+#ECC8D1:        3 Sheep        ;
+resources(0, 6, 0, 0, 7, 15)
+
+#CDE2C0:         4 Wood        ;
+resources(4, 6, 0, 0, 11, 15)
+
+#ECC8D1:          Boar         ;
+resources(4, 7, 0, 0, 12, 15)
+
+#ECC8D1:    House then Mill    ;
+build("House", "Mill")
+
+#ECC8D1:         3 Mill        ;
+resources(4, 11, 0, 0, 16, 20)
+
+#ECC8D1:          Boar         ;
+resources(4, 12, 0, 0, 17, 20)
+
+: House with Woodworker ;
+build("House")
+
+#ECC8D1:        2 Sheep        ;
+resources(4, 14, 0, 0, 19, 25)
+
+#CDE2C0:         1 Wood        ;
+resources(5, 15, 0, 0, 20, 25)
+
+#ECC8D1:        1 Sheep        ;
+resources(5, 16, 0, 0, 21, 25)
+
+#CDE2C0:        1 Wood        ;
+resources(6, 16, 0, 0, 22, 25)
+
+:  Loom and Feudal Age  ;
+
+fork
+#CDE2C0:  Move 4 Sheep to Wood  ;
+fork again
+#FFF4D8:  Move 3 Sheep to Gold  ;
+end fork
+
+fork
+:    At 60% of Feudal    
+2 Woodworkers on Barracks
+       then House       
+    then 2 Archeries    ;
+build("Barracks", "House", "Archerie")
+:  Start queuing archers ;
+fork again
+#FFF4D8: 5 villagers to gold;
+end fork
+
+:       Blacksmith      ;
+build("Blacksmith")
+
+stop
+@enduml
