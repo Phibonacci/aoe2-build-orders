@@ -1,8 +1,13 @@
 !$path   = "D:\projects\aoe2 chart\assets\"
 
 skinparam {
-  defaultFontSize 12
-  defaultFontName Consolas
+  shadowing true
+  backgroundColor white
+  handwritten true
+  default {
+    FontSize 12
+    FontName Consolas
+  }
   titleFontSize 30
   Activity {
     BackgroundColor #D0D2DE
@@ -18,8 +23,6 @@ skinparam {
   Arrow {
     Color Grey
   }
-  backgroundColor white
-  handwritten true
 }
 
 !function resource_space($count) 
