@@ -12,10 +12,10 @@ You will need to edit the `$path` variable in the `definitions.iuml` file with t
 
 ## Builds
 
-Build for commit *b6280a38265a08c827479c5bf1c92f1f49f1b8e3*.
+Build for commit *bdc030d1137d7fa3c1223679a5d767c9bfaf2155*.
 
-![Fast Castle](https://i.imgur.com/V4I6oxY.png)
+![Fast Castle](https://i.imgur.com/wCNEYqT.png)
 
 ----
 
-![Scout Rush](https://i.imgur.com/Z40OI3M.png)
+![Scout Rush](https://i.imgur.com/WtiXnHO.png)
