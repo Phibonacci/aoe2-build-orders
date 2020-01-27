@@ -18,9 +18,9 @@ Build for commit *bdc030d1137d7fa3c1223679a5d767c9bfaf2155*.
 
 ----
 
-Build for commit *bdc030d1137d7fa3c1223679a5d767c9bfaf2155*.
+Build for commit *d8e1a9944d3a5fafad84439f8aa154938207a7cb*.
 
-![Scout Rush](https://i.imgur.com/WtiXnHO.png)
+![Scout Rush](https://i.imgur.com/NMkI5lf.png)
 
 ----
 
