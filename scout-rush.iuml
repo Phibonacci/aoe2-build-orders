@@ -73,10 +73,10 @@ end fork
 build("Blacksmith")
 
 :   Search Wheelbarrow  
-         at 15mn        ;
+       at 14 farms      ;
 
 if (Archer transition?) then (Yes)
-#FFF4D8:     Move 4 to gold    ;
+#FFF4D8:     Move 10 to gold    ;
 else (No)
 endif
 
